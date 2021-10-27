@@ -1,25 +1,32 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Resources/iphones/iPhone_SE_(2nd_generation).png" type="Texture" id=1]
 [ext_resource path="res://MainWindow.gd" type="Script" id=2]
+[ext_resource path="res://DeviceView.gd" type="Script" id=3]
+[ext_resource path="res://DeviceIdentifier.gd" type="Script" id=4]
+[ext_resource path="res://Resources/search.png" type="Texture" id=5]
 
 [node name="MainWindow" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_right = 4096.0
+margin_bottom = 2395.0
 rect_scale = Vector2( 0.2, 0.2 )
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="dev_view" type="Sprite" parent="."]
+[node name="Device View" type="Sprite" parent="."]
 position = Vector2( 579.264, 995.677 )
 texture = ExtResource( 1 )
+script = ExtResource( 3 )
 
-[node name="dev_identifier" type="Label" parent="."]
+[node name="Device Identifier" type="Label" parent="."]
 margin_left = 5.61249
 margin_right = 1190.61
 margin_bottom = 171.0
+script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -32,3 +39,16 @@ margin_bottom = 1985.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Search Button" type="TextureButton" parent="."]
+margin_left = 4824.99
+margin_top = 33.8381
+margin_right = 4888.99
+margin_bottom = 97.8381
+rect_scale = Vector2( 4, 4 )
+texture_normal = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="Search Button" to="." method="_on_Search_Button_pressed"]
