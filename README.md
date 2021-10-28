@@ -17,5 +17,5 @@ There will always be a "Stable" build, and an "Edge" build (stable-edge)
 - Stable build: GUI will support all backend libimobiledevice-utils commands from the latest LTS repo (20.04)
 - Edge build: GUI will support all SELF-COMPILED "libimobiledevice-utils" commands (independent of package manager, newer features)
 
-The "Stable" build will be versioned like: VERSION_OF_STABLE_LIBIMOBILEDEVICE - GUI_VERSION (i.e "1.21-0.10")
-The "Edge" build will only have a build number with consists of following: yymmdd-hhmm (i.e build "211028-2139")
+- The "Stable" build will be versioned like: VERSION_OF_STABLE_LIBIMOBILEDEVICE - GUI_VERSION (i.e "1.21-0.10")
+- The "Edge" build will only have a build number with consists of following: yymmdd-hhmm (i.e build "211028-2139")
