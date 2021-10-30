@@ -5,10 +5,12 @@
 [node name="MainWindow" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_right = 291.84
-margin_bottom = 120.0
+margin_right = 1.02531e+08
+margin_bottom = 6.01755e+07
 rect_scale = Vector2( 1e-05, 1e-05 )
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="DeviceView" type="Sprite" parent="."]

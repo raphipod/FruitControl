@@ -1,4 +1,4 @@
-# Makefile for eye
+# Makefile for FruitControl
 
 build-linux:
-		$(GODOT) --path . --export "Linux/X11" Bin/
+		$(GODOT) --path . --export "Linux/X11" Bin/FruitControl_
