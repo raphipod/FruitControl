@@ -1,3 +1,3 @@
 #!/bin/bash
 
-ideviceinfo | awk '{print $2}' | awk 'NR==81 {print}'
+ideviceinfo | grep 'ProductVersion' | awk '{print $2}'
