@@ -15,13 +15,26 @@ run/main_scene="res://MainWindow.tscn"
 run/low_processor_mode=true
 config/icon="res://appicon.png"
 
+[debug]
+
+settings/fps/force_fps=1
+
 [display]
 
 window/dpi/allow_hidpi=true
+window/stretch/aspect="keep"
+
+[gui]
+
+theme/use_hidpi=true
 
 [physics]
 
+common/physics_fps=1
 common/enable_pause_aware_picking=true
+3d/active_soft_world=false
+3d/godot_physics/use_bvh=false
+2d/use_bvh=false
 
 [rendering]
 

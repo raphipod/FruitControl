@@ -1,16 +1,35 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
+[ext_resource path="res://Scripts/gdscripts/MkBackup_Button.gd" type="Script" id=1]
 [ext_resource path="res://MainWindow.gd" type="Script" id=2]
 
 [node name="MainWindow" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_right = 1.02531e+08
-margin_bottom = 6.01755e+07
-rect_scale = Vector2( 1e-05, 1e-05 )
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="DeviceView" type="Sprite" parent="."]
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_left = 815.0
+margin_top = 11.0
+margin_right = 1008.0
+margin_bottom = 185.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+margin_right = 193.0
+margin_bottom = 14.0
+text = "Options:"
+
+[node name="MkBackup_Button" type="Button" parent="VBoxContainer"]
+margin_top = 18.0
+margin_right = 193.0
+margin_bottom = 38.0
+text = "Make Backup"
+script = ExtResource( 1 )
+
+[connection signal="pressed" from="VBoxContainer/MkBackup_Button" to="VBoxContainer/MkBackup_Button" method="_on_MkBackup_Button_pressed"]
