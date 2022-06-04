@@ -13,6 +13,7 @@ Note: This app will only reliably work on Arch Linux or other rolling-release di
 
 # Dependencies
 
+- yay
 - libimobiledevice-git (AUR)
 - grep
 - sed
